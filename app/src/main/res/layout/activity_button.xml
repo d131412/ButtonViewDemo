@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonActivity">
+
+    <Button
+        android:id="@+id/btn_v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:background="#fe23e3"/>
+
+    <Button
+        android:id="@+id/btn_v2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+        android:textSize="24sp"
+        android:textColor="#a3c2b6"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_v2"
+        android:layout_below="@id/btn_v1"
+        android:layout_marginTop="12sp"/>
+
+    <Button
+        android:id="@+id/btn_v3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        android:textColor="#ff0000"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:onClick="showToast"
+        android:background="@drawable/btn_v3"
+        android:layout_below="@id/btn_v2"
+        android:layout_marginTop="12sp"/>
+
+    <Button
+        android:id="@+id/btn_v4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 4"
+        android:textSize="24sp"
+        android:textColor="#00ff00"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_v4"
+        android:layout_below="@id/btn_v3"
+        android:layout_marginTop="12sp"/>
+
+    <TextView
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#00ff00"
+        android:textSize="24sp"
+        android:layout_below="@id/btn_v4"
+        android:layout_marginTop="12sp"
+        android:gravity="center"
+        android:background="#ffff00"/>
+
+</RelativeLayout>
